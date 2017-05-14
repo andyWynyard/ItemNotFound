@@ -21,17 +21,18 @@ public class ItemNotFound {
 
 			found = false;
 
-			for (String hero: heroes) {
-				if (guess.equals(hero)) {
-					counter++;
-				}
-			}
+			//for (String hero: heroes) {
+			//	if (guess.equals(hero)) {
+			//		counter++;
+			//	}
+			//}
 
 			for (String hero: heroes) {
 				if (guess.equals(hero)) {					
 					found = true;
-				}
-			}
+					counter++; 	//Moved counter here - simpler
+				}				//and smaller code than 
+			}					//in the study drill.
 
 			if (found == false) {
 				System.out.println("No, " + guess + 
