@@ -31,7 +31,7 @@ public class ItemNotFound {
 				if (guess.equals(hero)) {					
 					found = true;
 					counter++; 	//Moved counter here - simpler
-				}				//and smaller code than 
+				}				//and smaller code than req
 			}					//in the study drill.
 
 			if (found == false) {
